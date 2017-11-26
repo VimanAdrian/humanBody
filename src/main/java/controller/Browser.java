@@ -166,7 +166,7 @@ public class Browser extends Region {
         try {
             path = Main.class.getProtectionDomain().getCodeSource().getLocation().getPath();
             decodedPath = URLDecoder.decode(path, "UTF-8");
-            decodedPath = decodedPath.substring(1, path.lastIndexOf("/") + 1);
+            decodedPath = decodedPath.substring(1, decodedPath.lastIndexOf("/") + 1);
             File first = new File(decodedPath + "resources/html/hello.html");
             System.out.println(decodedPath);
             webEngine.load(first.toURI().toString());
