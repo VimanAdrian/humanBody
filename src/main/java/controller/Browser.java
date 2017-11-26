@@ -1,4 +1,4 @@
-package sample;
+package controller;
 
 
 import javafx.application.Platform;
@@ -26,30 +26,23 @@ import javafx.scene.web.WebHistory;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import netscape.javascript.JSObject;
+import org.apache.commons.io.IOUtils;
+
+import java.io.InputStream;
+import java.io.StringWriter;
+import java.util.Arrays;
+
 
 public class Browser extends Region {
 
-    private final HBox toolBar;
     final private static String[] imageFiles = new String[]{
-            "product.png",
-            "blog.png",
-            "documentation.png",
-            "partners.png",
-            "help.png"
+
     };
     final private static String[] captions = new String[]{
-            "Cantecel corp"
-            //"Blogs",
-            //"Documentation",
-            //"Partners",
-            //"Help"
+
     };
     final private static String[] urls = new String[]{
-            "https://www.youtube.com/watch?v=g6ix1KSnIFA",
-            //"http://blogs.oracle.com/",
-            //"http://docs.oracle.com/javase/index.html",
-            //"http://www.oracle.com/partners/index.html",
-            //Browser.class.getResource("sample/help.html").toExternalForm()
+            "https://www.google.com",
     };
     final ImageView selectedImage = new ImageView();
     final Hyperlink[] hpls = new Hyperlink[captions.length];
@@ -59,6 +52,7 @@ public class Browser extends Region {
     final Button toggleHelpTopics = new Button("Toggle Help Topics");
     final WebView smallView = new WebView();
     final ComboBox comboBox = new ComboBox();
+    private final HBox toolBar;
     private boolean needDocumentationButton = false;
 
 
@@ -66,23 +60,22 @@ public class Browser extends Region {
         //apply the styles
         getStyleClass().add("browser");
 
+
+        //create links for the toolbar
         for (int i = 0; i < captions.length; i++) {
             // create hyperlinks
             Hyperlink hpl = hpls[i] = new Hyperlink(captions[i]);
-            //Image image = images[i]
-            //        = new Image(Browser.class.getResourceAsStream(imageFiles[i]));
-            //hpl.setGraphic(new ImageView(image));
+            Image image = images[i]
+                    = new Image(Browser.class.getResourceAsStream(imageFiles[i]));
+            hpl.setGraphic(new ImageView(image));
             final String url = urls[i];
             final boolean addButton = (hpl.getText().equals("Help"));
-
             // process event
             hpl.setOnAction((ActionEvent e) -> {
                 needDocumentationButton = addButton;
                 webEngine.load(url);
             });
-
         }
-
 
         comboBox.setPrefWidth(60);
 
@@ -166,19 +159,26 @@ public class Browser extends Region {
         });
 
         // load the home page
-        webEngine.load("http://www.oracle.com/products/index.html");
-
-        //add components
-        getChildren().add(toolBar);
-        getChildren().add(browser);
-    }
-
-    // JavaScript interface object
-    public class JavaApp {
-
-        public void exit() {
-            Platform.exit();
+        try {
+            ClassLoader CLDR = this.getClass().getClassLoader();
+            InputStream inputStream = CLDR.getResourceAsStream("resources/html/hello.html");
+            StringWriter writer = new StringWriter();
+            IOUtils.copy(inputStream, writer, "UTF-8");
+            String theString = writer.toString();
+            webEngine.loadContent(theString);
+        } catch (Exception e) {
+            System.out.println(Arrays.toString(e.getStackTrace()));
+            String error = "<html>\n" +
+                    "<header><title>This is title</title></header>\n" +
+                    "<body>\n" +
+                    Arrays.toString(e.getStackTrace()) +
+                    "</body>\n" +
+                    "</html>";
+            webEngine.loadContent(error);
         }
+        //add components
+        //getChildren().add(toolBar);
+        getChildren().add(browser);
     }
 
     private Node createSpacer() {
@@ -192,8 +192,8 @@ public class Browser extends Region {
         double w = getWidth();
         double h = getHeight();
         double tbHeight = toolBar.prefHeight(w);
-        layoutInArea(browser,0,0,w,h-tbHeight,0, HPos.CENTER, VPos.CENTER);
-        layoutInArea(toolBar,0,h-tbHeight,w,tbHeight,0,HPos.CENTER,VPos.CENTER);
+        layoutInArea(browser, 0, 0, w, h - tbHeight, 0, HPos.CENTER, VPos.CENTER);
+        layoutInArea(toolBar, 0, h - tbHeight, w, tbHeight, 0, HPos.CENTER, VPos.CENTER);
     }
 
     @Override
@@ -204,5 +204,13 @@ public class Browser extends Region {
     @Override
     protected double computePrefHeight(double width) {
         return 600;
+    }
+
+    // JavaScript interface object
+    public class JavaApp {
+
+        public void exit() {
+            Platform.exit();
+        }
     }
 }

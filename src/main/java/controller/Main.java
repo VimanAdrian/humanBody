@@ -1,4 +1,4 @@
-package sample;
+package controller;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -16,7 +16,7 @@ public class Main extends Application {
         scene = new Scene(new Browser(stage), 900, 600, Color.web("#666970"));
         stage.setScene(scene);
         // apply CSS style
-        scene.getStylesheets().add("BrowserToolbar.css");
+        scene.getStylesheets().add("css/BrowserToolbar.css");
         // show stage
         stage.show();
     }
