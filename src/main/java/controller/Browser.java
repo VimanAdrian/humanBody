@@ -28,8 +28,10 @@ import javafx.stage.Stage;
 import netscape.javascript.JSObject;
 import org.apache.commons.io.IOUtils;
 
+import java.io.File;
 import java.io.InputStream;
 import java.io.StringWriter;
+import java.net.URLDecoder;
 import java.util.Arrays;
 
 
@@ -159,19 +161,22 @@ public class Browser extends Region {
         });
 
         // load the home page
+        String path = "";
+        String decodedPath = "";
         try {
-            ClassLoader CLDR = this.getClass().getClassLoader();
-            InputStream inputStream = CLDR.getResourceAsStream("resources/html/hello.html");
-            StringWriter writer = new StringWriter();
-            IOUtils.copy(inputStream, writer, "UTF-8");
-            String theString = writer.toString();
-            webEngine.loadContent(theString);
+            path = Main.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+            decodedPath = URLDecoder.decode(path, "UTF-8");
+            decodedPath = decodedPath.substring(1, path.lastIndexOf("/") + 1);
+            File first = new File(decodedPath + "resources/html/hello.html");
+            System.out.println(decodedPath);
+            webEngine.load(first.toURI().toString());
         } catch (Exception e) {
             System.out.println(Arrays.toString(e.getStackTrace()));
             String error = "<html>\n" +
                     "<header><title>This is title</title></header>\n" +
                     "<body>\n" +
                     Arrays.toString(e.getStackTrace()) +
+                    decodedPath +
                     "</body>\n" +
                     "</html>";
             webEngine.loadContent(error);

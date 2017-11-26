@@ -78,21 +78,6 @@
         <defaultGoal>package</defaultGoal>
         <directory>${basedir}/target</directory>
         <finalName>${artifactId}-${version}</finalName>
-        <resources>
-            <resource>
-                <filtering>false</filtering>
-                <directory>src/main/java/resources</directory>
-                <targetPath>resources</targetPath>
-                <includes>
-                    <include>**/*.html</include>
-                    <include>**/*.css</include>
-                    <include>**/*.js</include>
-                    <include>**/*.png</include>
-                    <include>**/*.jpg</include>
-                    <include>**/*.mp4</include>
-                </includes>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>com.zenjava</groupId>
@@ -109,6 +94,28 @@
                         <goals>
                             <goal>build-jar</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${basedir}/target/jfx/app/resources</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/java/resources</directory>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
