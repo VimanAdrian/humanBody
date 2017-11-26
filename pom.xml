@@ -85,7 +85,7 @@
                 <version>8.6.0</version>
                 <configuration>
                     <mainClass>controller.Main</mainClass>
-                    <verbose>true</verbose>
+                    <verbose>false</verbose>
                 </configuration>
                 <executions>
                     <execution>
