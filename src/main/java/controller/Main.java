@@ -13,7 +13,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception{
         // create scene
         stage.setTitle("Corpul uman");
-        scene = new Scene(new Browser(stage), 1900, 1000, Color.web("#FFFFFF"));
+        scene = new Scene(new Browser(stage), 1020, 740, Color.web("#FFFFFF"));
         stage.setScene(scene);
         // apply CSS style
         scene.getStylesheets().add("css/BrowserToolbar.css");
