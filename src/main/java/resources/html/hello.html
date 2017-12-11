@@ -7,34 +7,49 @@
     <meta charset="utf-8">
     <script language="JavaScript">
         function enterHead() {
-            $("#cap").show();
+            $("#cap").fadeIn();
         }
         function hideHead() {
-            $("#cap").hide();
+            $("#cap").fadeOut();
         }
         function enterFoot() {
-            $("#picior").show();
+            $("#picior").fadeIn();
         }
         function hideFoot() {
-            $("#picior").hide();
+            $("#picior").fadeOut();
         }
         function enterHand() {
-            $("#mana").show();
+            $("#mana").fadeIn();
         }
         function hideHand() {
-            $("#mana").hide();
+            $("#mana").fadeOut();
         }
         function enterFingers() {
-            $("#degete").show();
+            $("#degete").fadeIn();
         }
         function hideFingers() {
-            $("#degete").hide();
+            $("#degete").fadeOut();
         }
         function enterAll() {
-            $("#tot").show();
+            $("#tot").fadeIn();
         }
         function hideAll() {
-            $("#tot").hide();
+            $("#tot").fadeOut();
+        }
+        function enterQuestion(){
+            $("#intrebare").fadeIn();
+        }
+        function hideQuestion(){
+            $("#intrebare").fadeOut();
+        }
+        function playTutorial(){
+            $("#tutorial").get(0).play();
+        }
+        function enterGames() {
+            $("#jocuri").fadeIn();
+        }
+        function hideGames() {
+            $("#jocuri").fadeOut();
         }
     </script>
 </head>
@@ -47,15 +62,22 @@
     <img src="../images/black%20-%20mana.png" width="1000px" height="720px" usemap="#menu" id="mana" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
     <img src="../images/black%20-%20degete.png" width="1000px" height="720px" usemap="#menu" id="degete" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
     <img src="../images/black%20-%20picior.png" width="1000px" height="720px" usemap="#menu" id="picior" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/intrebare.png" width="1000px" height="720px" usemap="#menu" id="intrebare" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/games.png" width="1000px" height="720px" usemap="#menu" id="jocuri" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
 
     <map name="menu">
-        <area shape="rect" coords="430,15,746,150" href="cap.html" alt="cap" onmouseover="enterHead()" onmouseout="hideHead()">
-      //  <area shape="rect" coords="590,170,743,402" href="maini.html" alt="mana" onmouseover="enterHand()" onmouseout="hideHand()">
-        <area shape="rect" coords="595,499,745,697"href="" alt="picior" onmouseover="enterFoot()" onmouseout="hideFoot()">
-        <area  shape="rect" coords="272,249,551,452" href="degete.html" alt="degete" onmouseover="enterFingers()" onmouseout="hideFingers()">
-        <area  shape="rect" coords="272,20,411,223" href="corp.html" alt="tot" onmouseover="enterAll()" onmouseout="hideAll()">
-        <area  shape="rect" coords="283,534,556,690" href="jocuri.html" alt="tot">
+        <area shape="rect" coords="430,15,746,150" href="cap.html" onmouseover="enterHead()" onmouseout="hideHead()">
+        <area shape="rect" coords="590,170,743,402" href="maini.html" onmouseover="enterHand()" onmouseout="hideHand()">
+        <area shape="rect" coords="595,499,745,697" href="" onmouseover="enterFoot()" onmouseout="hideFoot()">
+        <area shape="rect" coords="272,249,551,452" href="degete.html" onmouseover="enterFingers()" onmouseout="hideFingers()">
+        <area shape="rect" coords="272,20,411,223" href="corp.html" onmouseover="enterAll()" onmouseout="hideAll()">
+        <area shape="rect" coords="265,470,570,700" href="jocuri.html" onmouseover="enterGames()" onmouseout="hideGames()">
+        <area shape="rect" coords="820,0,1000,210" href="#" onmouseover="enterQuestion()" onmouseout="hideQuestion()" onclick="playTutorial()">
     </map>
+
+    <audio style="display: none;" controls id="tutorial">
+        <source src="../audio/fart.mp3" type="audio/mpeg">
+    </audio>
 </div>
 
 </body>
