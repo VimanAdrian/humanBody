@@ -12,6 +12,30 @@
         function hideHead() {
             $("#cap").hide();
         }
+        function enterFoot() {
+            $("#picior").show();
+        }
+        function hideFoot() {
+            $("#picior").hide();
+        }
+        function enterHand() {
+            $("#mana").show();
+        }
+        function hideHand() {
+            $("#mana").hide();
+        }
+        function enterFingers() {
+            $("#degete").show();
+        }
+        function hideFingers() {
+            $("#degete").hide();
+        }
+        function enterAll() {
+            $("#tot").show();
+        }
+        function hideAll() {
+            $("#tot").hide();
+        }
     </script>
 </head>
 <body style="background-color: #3EB3A0">
@@ -26,6 +50,11 @@
 
     <map name="menu">
         <area shape="rect" coords="430,15,746,150" href="cap.html" alt="cap" onmouseover="enterHead()" onmouseout="hideHead()">
+      //  <area shape="rect" coords="590,170,743,402" href="maini.html" alt="mana" onmouseover="enterHand()" onmouseout="hideHand()">
+        <area shape="rect" coords="595,499,745,697"href="" alt="picior" onmouseover="enterFoot()" onmouseout="hideFoot()">
+        <area  shape="rect" coords="272,249,551,452" href="degete.html" alt="degete" onmouseover="enterFingers()" onmouseout="hideFingers()">
+        <area  shape="rect" coords="272,20,411,223" href="corp.html" alt="tot" onmouseover="enterAll()" onmouseout="hideAll()">
+        <area  shape="rect" coords="283,534,556,690" href="jocuri.html" alt="tot">
     </map>
 </div>
 

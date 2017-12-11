@@ -12,13 +12,23 @@
     <!--[if IE]>
     <script type="text/javascript" src="../js/excanvas.js"></script><![endif]-->
     <script type="text/javascript" src="../js/colorashGeoc.js"></script>
+    <script type="text/javascript" src="../js/FileSaver.js"></script>
 </head>
-<body>
+<body >
 
 <a href="jocuri.html" class="back glyphicon glyphicon-arrow-left"></a>
 <div id="canvasDiv"></div>
 <script type="text/javascript"> $(document).ready(function() {
-    prepareCanvas();
+    prepareCanvas("../images/contur3.png");
 });</script>
+<ul class="images">
+    <li><img src="../images/contur3.png" width="250" height="200" onclick= changeBack("../images/contur3.png")></li>
+    <li><img src="../images/contur4.png" width="200" height="200" onclick= changeBack("../images/contur4.png")></li>
+    <li><img src="../images/tipa.png" width="200" height="200"  onclick= changeBack("../images/tipa.png")></li>
+    <li><img src="../images/contur5.gif" width="200" height="200"  onclick= changeBack("../images/contur5.gif")></li>
+    <li><img src="../images/contur6.png" width="200" height="200"  onclick= changeBack("../images/contur6.png")></li>
+    <li></li>
+
+</ul>
 </body>
 </html>
