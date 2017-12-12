@@ -50,8 +50,59 @@ sizeHotspotWidthObject.small = resize(16);
 var totalLoadResources = 8;
 var curLoadResNum = 0;
 
-
-
+function initalize() {
+    canvas;
+    context;
+     canvasWidth = resize(490);
+     canvasHeight = resize(220);
+     padding = resize(25);
+     lineWidth = resize(8);
+     colorPurple = "#cb3594";
+     colorGreen = "#239b1f";
+     colorYellow = "#ffcf33";
+     colorBrown = "#986928";
+     colorBlue = "#0910CB";
+     colorRed = "#CB0B0F";
+     colorOrange = "#CB5A00";
+     colorTuqoise = "#09B7CB";
+     outlineImage = new Image();
+     crayonImage = new Image();
+     markerImage = new Image();
+     eraserImage = new Image();
+     crayonBackgroundImage = new Image();
+     markerBackgroundImage = new Image();
+     eraserBackgroundImage = new Image();
+     crayonTextureImage = new Image();
+     clickX = new Array();
+     clickY = new Array();
+     clickColor = new Array();
+     clickTool = new Array();
+     clickSize = new Array();
+     clickDrag = new Array();
+     paint = false;
+     curColor = colorPurple;
+     curTool = "crayon";
+     curSize = "normal";
+     mediumStartX = resize(18);
+     mediumStartY = resize(19); //
+     mediumImageWidth = resize(93);
+     mediumImageHeight = resize(46); //
+     drawingAreaX = resize(111);
+     drawingAreaY = resize(11);
+     drawingAreaWidth = resize(267);
+     drawingAreaHeight = resize(200);
+     toolHotspotStartY = resize(23);
+     toolHotspotHeight = resize(38);
+     sizeHotspotStartY = resize(157);
+     sizeHotspotHeight = resize(36);
+     sizeHotspotWidthObject = new Object();
+    sizeHotspotWidthObject.huge = resize(39);
+    sizeHotspotWidthObject.large = resize(25);
+    sizeHotspotWidthObject.normal = resize(18);
+    sizeHotspotWidthObject.small = resize(16);
+     totalLoadResources = 8;
+     curLoadResNum = 0;
+}
 /**
  * Calls the redraw function after all neccessary resources are loaded.
  */
@@ -80,6 +131,7 @@ function clearCanvasGrid(canvasID){
 
     // Restore the transform
     context.restore(); //CLEARS THE SPECIFIC CANVAS COMPLETELY FOR NEW DRAWING
+
 }
 
 function changeBack(a) {
@@ -92,8 +144,18 @@ function downloadAll() {
         saveAs(blob, "pretty image.png");
     });
 }
-function da () {
+
+function deleteAll() {
+    var canvass = document.getElementById("canvas");
+    canvass.getContext.clearRect(0, 0, canvass.width, canvass.height);
 }
+
+function deleteOld(name) {
+    document.getElementById('canvas').remove();
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    initalize();
+    prepareCanvas(name);
+};
 
 /**
  * Creates a canvas element, loads images, adds events, and draws the canvas for the first time.
@@ -111,13 +173,7 @@ function prepareCanvas(name)
         canvas = G_vmlCanvasManager.initElement(canvas);
     }
     context = canvas.getContext("2d"); // Grab the 2d canvas context
-    var link = document.createElement('a');
-    link.innerHTML = 'download image';
-    link.addEventListener('click', function(ev) {
-        link.href = canvas.toDataURL();
-        link.download = "mypainting.png";
-    }, false);
-    document.body.appendChild(link);
+
     // Note: The above code is a workaround for IE 8 and lower. Otherwise we could have used:
     //     context = document.getElementById('canvas').getContext("2d");
 
@@ -239,7 +295,6 @@ function prepareCanvas(name)
         addClick(mouseX, mouseY, false);
         redraw();
     });
-
     $('#canvas').mousemove(function(e){
         if(paint===true){
             addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
@@ -257,6 +312,17 @@ function prepareCanvas(name)
     });
 ////////////////////////////////////////////////////////////////
 
+}
+function clearCanvas() {
+    var ctx = canvas.getContext('2d');     // gets reference to canvas context
+    ctx.beginPath();    // clear existing drawing paths
+    ctx.save();         // store the current transformation matrix
+
+    // Use the identity matrix while clearing the canvas
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.restore();        // restore the transform
 }
 
 
@@ -279,10 +345,11 @@ function addClick(x, y, dragging)
 /**
  * Clears the canvas.
  */
-function clearCanvas()
-{
-    context.clearRect(0, 0, canvasWidth, canvasHeight);
-}
+/**
+ * Erase board
+*/// function to clear the canvas ( http://coursesweb.net/ )
+// cnv = the object with the canvas element
+
 
 /**
  * Redraws the canvas.
@@ -497,77 +564,178 @@ function redraw()
         context.drawImage(markerBackgroundImage, 0, 0, canvasWidth, canvasHeight);
 
         // Purple
-        locX = (curColor === colorGreen) ? resize(18): resize(52);
-        locY += resize(19);
-
+        // Purple
+        locX = (curColor === colorPurple) ? resize(18) : resize(52);
+        locY = resize(14);
         context.beginPath();
-        context.moveTo(locX + resize(10),locY + resize(24));
-        context.lineTo(locX + resize(10), locY + resize(24));
-        context.lineTo(locX + resize(22), locY + resize(16));
-        context.lineTo(locX + resize(22), locY + resize(31));
+        context.moveTo(locX + resize(58), locY + resize(20));
+        context.lineTo(locX + resize(58), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(23));
+        context.lineTo(locX + resize(11), locY + resize(17));
+        context.lineTo(locX + resize(11), locY + resize(9));
+        context.lineTo(locX + resize(29), locY + resize(3));
+        context.lineTo(locX + resize(29), locY + resize(1));
+        context.lineTo(locX + resize(58), locY + resize(1));
         context.closePath();
         context.fillStyle = colorPurple;
         context.fill();
 
-        if(curColor ===colorPurple){
-            context.drawImage(markerImage, locX, locY, mediumImageWidth, mediumImageHeight);
+        if(curColor === colorPurple){
+            context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
             context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
         }
 
         // Green
-        locX = (curColor === colorGreen) ? resize(18): resize(52);
-        locY += resize(46);
-
+        locX = (curColor === colorGreen) ? resize(18) : resize(52);
+        locY += resize(25);
         context.beginPath();
-        context.moveTo(locX + resize(10),locY + resize(24));
-        context.lineTo(locX + resize(10), locY + resize(24));
-        context.lineTo(locX + resize(22), locY + resize(16));
-        context.lineTo(locX + resize(22), locY + resize(31));
+        context.moveTo(locX + resize(58), locY + resize(20));
+        context.lineTo(locX + resize(58), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(23));
+        context.lineTo(locX + resize(11), locY + resize(17));
+        context.lineTo(locX + resize(11), locY + resize(9));
+        context.lineTo(locX + resize(29), locY + resize(3));
+        context.lineTo(locX + resize(29), locY + resize(1));
+        context.lineTo(locX + resize(58), locY + resize(1));
         context.closePath();
         context.fillStyle = colorGreen;
         context.fill();
 
         if(curColor === colorGreen){
-            context.drawImage(markerImage, locX, locY, mediumImageWidth, mediumImageHeight);
+            context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
             context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
         }
 
         // Yellow
-        locX = (curColor === colorYellow) ? resize(18): resize(52);
-        locY += resize(46);
-
+        locX = (curColor === colorYellow) ? resize(18) : resize(52);
+        locY += resize(25);
         context.beginPath();
-        context.moveTo(locX + resize(10), locY + resize(24));
-        context.lineTo(locX + resize(10), locY + resize(24));
-        context.lineTo(locX + resize(22), locY + resize(16));
-        context.lineTo(locX + resize(22), locY + resize(31));
+        context.moveTo(locX + resize(58), locY + resize(20));
+        context.lineTo(locX + resize(58), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(23));
+        context.lineTo(locX + resize(11), locY + resize(17));
+        context.lineTo(locX + resize(11), locY + resize(9));
+        context.lineTo(locX + resize(29), locY + resize(3));
+        context.lineTo(locX + resize(29), locY + resize(1));
+        context.lineTo(locX + resize(58), locY + resize(1));
         context.closePath();
         context.fillStyle = colorYellow;
         context.fill();
 
         if(curColor === colorYellow){
-            context.drawImage(markerImage, locX, locY, mediumImageWidth, mediumImageHeight);
+            context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
             context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
         }
 
         // Brown
-        locX = (curColor === colorBrown) ? resize(18): resize(52);
-        locY += resize(46);
-
+        locX = (curColor === colorBrown) ? resize(18) : resize(52);
+        locY += resize(25);
         context.beginPath();
-        context.moveTo(locX + resize(10), locY + resize(24));
-        context.lineTo(locX + resize(10), locY + resize(24));
-        context.lineTo(locX + resize(22), locY + resize(16));
-        context.lineTo(locX + resize(22), locY + resize(31));
+        context.moveTo(locX + resize(58), locY + resize(20));
+        context.lineTo(locX + resize(58), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(23));
+        context.lineTo(locX + resize(11), locY + resize(17));
+        context.lineTo(locX + resize(11), locY + resize(9));
+        context.lineTo(locX + resize(29), locY + resize(3));
+        context.lineTo(locX + resize(29), locY + resize(1));
+        context.lineTo(locX + resize(58), locY + resize(1));
         context.closePath();
         context.fillStyle = colorBrown;
         context.fill();
 
         if(curColor === colorBrown){
-            context.drawImage(markerImage, locX, locY, mediumImageWidth, mediumImageHeight);
+            context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
+        }else{
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+        }
+        locX = (curColor === colorBlue) ? resize(18) : resize(52);
+        locY += resize(25);
+        context.beginPath();
+        context.moveTo(locX + resize(58), locY + resize(20));
+        context.lineTo(locX + resize(58), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(23));
+        context.lineTo(locX + resize(11), locY + resize(17));
+        context.lineTo(locX + resize(11), locY + resize(9));
+        context.lineTo(locX + resize(29), locY + resize(3));
+        context.lineTo(locX + resize(29), locY + resize(1));
+        context.lineTo(locX + resize(58), locY + resize(1));
+        context.closePath();
+        context.fillStyle = colorBlue;
+        context.fill();
+
+        if(curColor === colorBlue){
+            context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
+        }else{
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+        }
+        locX = (curColor === colorRed) ? resize(18) : resize(52);
+        locY += resize(25);
+        context.beginPath();
+        context.moveTo(locX + resize(58), locY + resize(20));
+        context.lineTo(locX + resize(58), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(23));
+        context.lineTo(locX + resize(11), locY + resize(17));
+        context.lineTo(locX + resize(11), locY + resize(9));
+        context.lineTo(locX + resize(29), locY + resize(3));
+        context.lineTo(locX + resize(29), locY + resize(1));
+        context.lineTo(locX + resize(58), locY + resize(1));
+        context.closePath();
+        context.fillStyle = colorRed;
+        context.fill();
+
+        if(curColor === colorRed){
+            context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
+        }else{
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+        }
+        locX = (curColor === colorOrange) ? resize(18) : resize(52);
+        locY += resize(25);
+        context.beginPath();
+        context.moveTo(locX + resize(58), locY + resize(20));
+        context.lineTo(locX + resize(58), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(23));
+        context.lineTo(locX + resize(11), locY + resize(17));
+        context.lineTo(locX + resize(11), locY + resize(9));
+        context.lineTo(locX + resize(29), locY + resize(3));
+        context.lineTo(locX + resize(29), locY + resize(1));
+        context.lineTo(locX + resize(58), locY + resize(1));
+        context.closePath();
+        context.fillStyle = colorOrange;
+        context.fill();
+
+        if(curColor === colorOrange){
+            context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
+        }else{
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+        }
+        locX = (curColor === colorTuqoise) ? resize(18) : resize(52);
+        locY += resize(25);
+        context.beginPath();
+        context.moveTo(locX + resize(58), locY + resize(20));
+        context.lineTo(locX + resize(58), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(25));
+        context.lineTo(locX + resize(29), locY + resize(23));
+        context.lineTo(locX + resize(11), locY + resize(17));
+        context.lineTo(locX + resize(11), locY + resize(9));
+        context.lineTo(locX + resize(29), locY + resize(3));
+        context.lineTo(locX + resize(29), locY + resize(1));
+        context.lineTo(locX + resize(58), locY + resize(1));
+        context.closePath();
+        context.fillStyle = colorTuqoise;
+        context.fill();
+
+        if(curColor === colorTuqoise){
+            context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
             context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
         }
