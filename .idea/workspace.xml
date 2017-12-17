@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/j9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/css/joc4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/html/joc4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/js/joc4.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/humanBody.iml" afterPath="$PROJECT_DIR$/humanBody.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resources/html/jocuri.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/jocuri.html" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -143,8 +128,8 @@
       <file leaf-file-name="jocuri.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/jocuri.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="168">
+              <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -246,8 +231,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -430,6 +413,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -620,7 +605,8 @@
       <workItem from="1513530701668" duration="7697000" />
       <workItem from="1513539081869" duration="1007000" />
       <workItem from="1513541238292" duration="254000" />
-      <workItem from="1513541509872" duration="10000" />
+      <workItem from="1513541509872" duration="260000" />
+      <workItem from="1513543252539" duration="65000" />
     </task>
     <task id="LOCAL-00001" summary="cantelec youtube">
       <created>1511703048510</created>
@@ -720,14 +706,22 @@
       <option name="project" value="LOCAL" />
       <updated>1513539072922</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="joc 4 dar 3">
+      <created>1513541540436</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1513541540436</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52921000" />
+    <option name="totallyTimeSpent" value="53236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -738,12 +732,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22824919" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23922414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6754717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26777777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17508055" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17776585" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -789,7 +783,8 @@
     <MESSAGE value="updated readme" />
     <MESSAGE value="meniu sunete" />
     <MESSAGE value="submenus" />
-    <option name="LAST_COMMIT_MESSAGE" value="submenus" />
+    <MESSAGE value="joc 4 dar 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="joc 4 dar 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1080,8 +1075,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/jocuri.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="168">
+          <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
           <folding />
         </state>
       </provider>
