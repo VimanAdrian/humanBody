@@ -40,7 +40,7 @@ public class Browser extends Region {
     private final WebView browser = new WebView();
     private final WebEngine webEngine = browser.getEngine();
 
-    public Browser(final Stage stage) {
+    Browser(final Stage stage) {
         //apply the styles
         getStyleClass().add("browser");
 
@@ -92,12 +92,12 @@ public class Browser extends Region {
 
     @Override
     protected double computePrefWidth(double height) {
-        return 900;
+        return 720;
     }
 
     @Override
     protected double computePrefHeight(double width) {
-        return 600;
+        return 1000;
     }
 
     // JavaScript interface object
