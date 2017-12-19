@@ -69,8 +69,11 @@
         links = agent;
         links.moveTo(100,100);
         links.show();
-        links.gestureAt(600,100);
+        links.speak("Pentru a ne juca cu copilasul, mutati mouse-ul pe patratele colorate si dati click. ");
+        playTutorial();
     });
+
+    $("#tutorialA").get(0).play();
 
     function enterHead() {
         $("#cap").fadeIn();
