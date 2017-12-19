@@ -1,7 +1,10 @@
 package controller;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -17,8 +20,17 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.setTitle("Corpul Uman");
-        // apply CSS style
-        scene.getStylesheets().add("css/BrowserToolbar.css");
+
+        stage.getScene().addEventFilter(MouseEvent.MOUSE_RELEASED,
+                new EventHandler<MouseEvent>() {
+                    public void handle(MouseEvent event) {
+                        if (event.getButton() == MouseButton.SECONDARY) {
+                            event.consume();
+                        }
+
+                    }
+                });
+
         // show stage
         stage.show();
     }
