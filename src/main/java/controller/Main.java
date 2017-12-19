@@ -30,7 +30,6 @@ public class Main extends Application {
 
                     }
                 });
-
         // show stage
         stage.show();
     }
