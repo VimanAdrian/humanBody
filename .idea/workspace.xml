@@ -2,63 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Bonzi/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Clippy/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/F1/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Genie/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Genius/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Links/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Merlin/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Peedy/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Rocky/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Rover/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/css/clippy.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Bonzi/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Bonzi/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Bonzi/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Clippy/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Clippy/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Clippy/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/F1/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/F1/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/F1/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Genie/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Genie/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Genie/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Genius/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Genius/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Genius/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Links/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Links/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Links/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Merlin/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Merlin/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Merlin/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Peedy/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Peedy/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Peedy/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Rocky/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Rocky/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Rocky/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Rover/agent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Rover/sounds-mp3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/images/agents/Rover/sounds-ogg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/javascript/clippy.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/Browser.java" afterPath="$PROJECT_DIR$/src/main/java/controller/Browser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resources/html/hello.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/hello.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resources/html/joc1.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/joc1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resources/html/joc2.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/joc2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/resources/html/joc4.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/joc4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/resources/js/FileSaver.js" afterPath="$PROJECT_DIR$/src/main/java/resources/javascript/FileSaver.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/resources/js/FileSaver.min.js" afterPath="$PROJECT_DIR$/src/main/java/resources/javascript/FileSaver.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/resources/js/colorashGeoc.js" afterPath="$PROJECT_DIR$/src/main/java/resources/javascript/colorashGeoc.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/resources/js/excanvas.js" afterPath="$PROJECT_DIR$/src/main/java/resources/javascript/excanvas.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/resources/js/joc1.html" afterPath="$PROJECT_DIR$/src/main/java/resources/javascript/joc1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/resources/js/joc1.js" afterPath="$PROJECT_DIR$/src/main/java/resources/javascript/joc1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/resources/js/joc4.js" afterPath="$PROJECT_DIR$/src/main/java/resources/javascript/joc4.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/resources/js/jquery.snap-puzzle.js" afterPath="$PROJECT_DIR$/src/main/java/resources/javascript/jquery.snap-puzzle.js" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="joc1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="joc1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/joc1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
@@ -94,6 +39,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="joc2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/joc2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -101,7 +56,11 @@
       <find>javafx</find>
       <find>agent</find>
       <find>js</find>
+      <find>../js/</find>
     </findStrings>
+    <dirStrings>
+      <dir>D:\Facultate\humanBody</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -134,7 +93,6 @@
         <option value="$PROJECT_DIR$/src/main/java/resources/javascript/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/src/main/java/resources/javascript/boot.js" />
         <option value="$PROJECT_DIR$/src/main/java/resources/javascript/bootstrap.js" />
-        <option value="$PROJECT_DIR$/src/main/java/resources/html/joc2.html" />
         <option value="$PROJECT_DIR$/src/main/java/resources/html/jocuri.html" />
         <option value="$PROJECT_DIR$/src/main/java/resources/html/corp.html" />
         <option value="$PROJECT_DIR$/src/main/java/resources/html/cap.html" />
@@ -149,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/main/java/resources/html/hello.html" />
         <option value="$PROJECT_DIR$/src/main/java/resources/html/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/resources/html/joc1.html" />
+        <option value="$PROJECT_DIR$/src/main/java/resources/html/joc2.html" />
       </list>
     </option>
   </component>
@@ -497,7 +456,7 @@
       <workItem from="1513613223509" duration="1267000" />
       <workItem from="1513624344178" duration="290000" />
       <workItem from="1513674498482" duration="2883000" />
-      <workItem from="1513684514808" duration="6874000" />
+      <workItem from="1513684514808" duration="6968000" />
     </task>
     <task id="LOCAL-00001" summary="cantelec youtube">
       <created>1511703048510</created>
@@ -618,11 +577,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513677331952</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="restructured">
+      <created>1513692364048</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1513692364048</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66334000" />
+    <option name="totallyTimeSpent" value="66428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -642,6 +608,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21267454" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -659,7 +626,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,7 +650,8 @@
     <MESSAGE value="submenus" />
     <MESSAGE value="disabled right clickA" />
     <MESSAGE value="removed unnecessary backend stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unnecessary backend stuff" />
+    <MESSAGE value="restructured" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructured" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -941,14 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/joc2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -986,6 +945,14 @@
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/joc2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
