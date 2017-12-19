@@ -41,8 +41,6 @@ public class Browser extends Region {
     private final WebEngine webEngine = browser.getEngine();
 
     Browser(final Stage stage) {
-        //apply the styles
-        getStyleClass().add("browser");
 
         // process page loading
         webEngine.getLoadWorker().stateProperty().addListener(

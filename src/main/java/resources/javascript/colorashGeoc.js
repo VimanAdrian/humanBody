@@ -388,7 +388,7 @@ function redraw()
         if(curColor === colorPurple){
             context.drawImage(crayonImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
 
         // Green=
@@ -412,7 +412,7 @@ function redraw()
         if(curColor === colorGreen){
             context.drawImage(crayonImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
 
         // Yellow
@@ -436,7 +436,7 @@ function redraw()
         if(curColor === colorYellow){
             context.drawImage(crayonImage, locX, locY-20, mediumImageWidth, mediumImageHeight);  ////////// locY trebuie mutat
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
 
 
@@ -461,7 +461,7 @@ function redraw()
         if(curColor === colorBrown){
             context.drawImage(crayonImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
 
         // Blue
@@ -485,7 +485,7 @@ function redraw()
         if(curColor === colorBlue){
             context.drawImage(crayonImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
 
 
@@ -509,7 +509,7 @@ function redraw()
         if(curColor === colorRed){
             context.drawImage(crayonImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
         // Orange
         locX = (curColor === colorOrange) ? resize(18) : resize(52);
@@ -532,7 +532,7 @@ function redraw()
         if(curColor === colorOrange){
             context.drawImage(crayonImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
         ////Turqoise
         locX = (curColor === colorTuqoise) ? resize(18) : resize(52);
@@ -555,7 +555,7 @@ function redraw()
         if(curColor === colorTuqoise){
             context.drawImage(crayonImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
     }
     else if(curTool === "marker")
@@ -584,7 +584,7 @@ function redraw()
         if(curColor === colorPurple){
             context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(markerImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
 
         // Green
@@ -607,7 +607,7 @@ function redraw()
         if(curColor === colorGreen){
             context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(markerImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
 
         // Yellow
@@ -630,7 +630,7 @@ function redraw()
         if(curColor === colorYellow){
             context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(markerImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
 
         // Brown
@@ -653,7 +653,7 @@ function redraw()
         if(curColor === colorBrown){
             context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(markerImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
         locX = (curColor === colorBlue) ? resize(18) : resize(52);
         locY += resize(25);
@@ -674,7 +674,7 @@ function redraw()
         if(curColor === colorBlue){
             context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(markerImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
         locX = (curColor === colorRed) ? resize(18) : resize(52);
         locY += resize(25);
@@ -695,7 +695,7 @@ function redraw()
         if(curColor === colorRed){
             context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(markerImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
         locX = (curColor === colorOrange) ? resize(18) : resize(52);
         locY += resize(25);
@@ -716,7 +716,7 @@ function redraw()
         if(curColor === colorOrange){
             context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(markerImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
         locX = (curColor === colorTuqoise) ? resize(18) : resize(52);
         locY += resize(25);
@@ -737,7 +737,7 @@ function redraw()
         if(curColor === colorTuqoise){
             context.drawImage(markerImage, locX, locY-20, mediumImageWidth, mediumImageHeight);
         }else{
-            context.drawImage(crayonImage, 0, 0, resize(59), mediumImageHeight, locX, locY, resize(59), mediumImageHeight);
+            context.drawImage(markerImage, 0, 0, resize(59), mediumImageHeight - 40, locX+20, locY-15, resize(59), mediumImageHeight+2);
         }
     }
     else if(curTool === "eraser")
