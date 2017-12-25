@@ -36,11 +36,19 @@
     }
 }(jQuery);
 
+var photosArray = ["./../images/puzzle1.png", "./../images/puzzle2.jpg", "./../images/puzzle3.jpg"];
+var globalIndex = photosArray.length-1;
+
 function start_puzzle(x) {
+    var index = photosArray.length-1;
+        while (globalIndex === index && index < photosArray.length){
+            index = Math.floor((Math.random() * photosArray.length) + 1);
+        }
+        globalIndex = index;
+    $("#source_image").attr('src', photosArray[globalIndex]);
+
     $('#puzzle_solved').hide();
-    if (x === 3) {
-        $("#source_image").attr('src', './../images/puzzle3.jpg');
-    }
+
     $('#source_image').snapPuzzle({
         rows: x, columns: x,
         pile: '#pile',
@@ -74,7 +82,7 @@ $(function () {
     });
 
     $('#inapoi').click(function () {
-        window.location.href ="hello.html";
+        window.location.href = "hello.html";
 
     });
 

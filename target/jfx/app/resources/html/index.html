@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Corpul uman</title>
+    <link rel="stylesheet" type="text/css" href="../css/hello.css">
+    <link rel="stylesheet" type="text/css" href="../css/clippy.css" media="all">
+    <script src="../javascript/jquery-3.2.1.js"></script>
+    <meta charset="utf-8">
+</head>
+<body style="background-color: #3EB3A0">
+<div style="position: relative">
+    <img src="../images/fundal.png" width="1000px" height="720px" usemap="#menu" id="fundal" style="position: absolute;top: 0;left: 0;z-index: 1;">
+
+    <img src="../images/black%20-%20tot.png" width="1000px" height="720px" usemap="#menu" id="tot" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/black%20-%20cap.png" width="1000px" height="720px" usemap="#menu" id="cap" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/black%20-%20mana.png" width="1000px" height="720px" usemap="#menu" id="mana" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/black%20-%20degete.png" width="1000px" height="720px" usemap="#menu" id="degete" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/black%20-%20picior.png" width="1000px" height="720px" usemap="#menu" id="picior" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/intrebare.png" width="1000px" height="720px" usemap="#menu" id="intrebare" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/games.png" width="1000px" height="720px" usemap="#menu" id="jocuri" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+
+    <map name="menu">
+        <area shape="rect" coords="430,15,746,150" href="cap.html" onmouseover="enterHead()" onmouseout="hideHead()">
+        <area shape="rect" coords="590,170,743,402" href="maini.html" onmouseover="enterHand()" onmouseout="hideHand()">
+        <area shape="rect" coords="595,420,745,697" href="picior.html" onmouseover="enterFoot()" onmouseout="hideFoot()">
+        <area shape="rect" coords="272,249,551,452" href="degete.html" onmouseover="enterFingers()" onmouseout="hideFingers()">
+        <area shape="rect" coords="272,20,411,223" href="corp.html" onmouseover="enterAll()" onmouseout="hideAll()">
+        <area shape="rect" coords="265,470,570,700" href="jocuri.html" onmouseover="enterGames()" onmouseout="hideGames()">
+        <area shape="rect" coords="820,0,1000,210" href="#" onmouseover="enterQuestion()" onmouseout="hideQuestion()" onclick="playTutorial()">
+    </map>
+
+    <audio style="display: none;" controls id="fartA">
+        <source src="../audio/fart.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="display: none;" controls id="corpulA">
+        <source src="../audio/corpul%20uman.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="display: none;" controls id="capA">
+        <source src="../audio/cap.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="display: none;" controls id="degeteA">
+        <source src="../audio/degete.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="display: none;" controls id="hapciuA">
+        <source src="../audio/hapciu.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="display: none;" controls id="jocuriA">
+        <source src="../audio/jocuri.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="display: none;" controls id="manaA">
+        <source src="../audio/mana.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="display: none;" controls id="piciorA">
+        <source src="../audio/picior.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="display: none;" controls id="tutorialA">
+        <source src="../audio/tutorial.mp3" type="audio/mpeg">
+    </audio>
+</div>
+</body>
+<script src="../javascript/clippy.js"></script>
+<script>
+
+    var links;
+
+    window.CLIPPY_CDN = '../images/agents/';
+    clippy.load('Links', function(agent){
+        // do anything with the loaded agent
+        links = agent;
+        links.moveTo(100,100);
+        links.show();
+        links.speak("Pentru a ne juca cu copilasul, mutati mouse-ul pe patratele colorate si dati click. ");
+        playTutorial();
+    });
+
+    $("#tutorialA").get(0).play();
+
+    function enterHead() {
+        $("#cap").fadeIn();
+        $("#capA").get(0).play();
+    }
+    function hideHead() {
+        $("#cap").fadeOut();
+    }
+    function enterFoot() {
+        $("#picior").fadeIn();
+        $("#piciorA").get(0).play();
+    }
+    function hideFoot() {
+        $("#picior").fadeOut();
+    }
+    function enterHand() {
+        $("#mana").fadeIn();
+        $("#manaA").get(0).play();
+    }
+    function hideHand() {
+        $("#mana").fadeOut();
+    }
+    function enterFingers() {
+        $("#degete").fadeIn();
+        $("#degeteA").get(0).play();
+    }
+    function hideFingers() {
+        $("#degete").fadeOut();
+    }
+    function enterAll() {
+        $("#tot").fadeIn();
+        $("#corpulA").get(0).play();
+    }
+    function hideAll() {
+        $("#tot").fadeOut();
+    }
+    function enterQuestion(){
+        $("#intrebare").fadeIn();
+    }
+    function hideQuestion(){
+        $("#intrebare").fadeOut();
+    }
+    function enterGames() {
+        $("#jocuri").fadeIn();
+        $("#jocuriA").get(0).play();
+    }
+    function hideGames() {
+        $("#jocuri").fadeOut();
+    }
+    function playTutorial(){
+        $("#tutorialA").get(0).play();
+    }
+    $( document ).on( "mousemove", function( event ) {
+        if(event.pageX>504 && event.pageX<523 && event.pageY > 72 && event.pageY < 91){
+            $("#hapciuA").get(0).play();
+        }
+    });
+
+</script>
+</html>
