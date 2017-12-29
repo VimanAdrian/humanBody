@@ -116,6 +116,7 @@
     function enterHead() {
         $("#cap").fadeIn();
         $("#capA").get(0).play();
+        links.speak("Acela este capul. ");
     }
 
     function hideHead() {
@@ -125,6 +126,7 @@
     function enterFoot() {
         $("#picior").fadeIn();
         $("#piciorA").get(0).play();
+        links.speak("Acela este un picior. ");
     }
 
     function hideFoot() {
@@ -134,6 +136,7 @@
     function enterHand() {
         $("#mana").fadeIn();
         $("#manaA").get(0).play();
+        links.speak("Acea este mana. ");
     }
 
     function hideHand() {
@@ -143,6 +146,7 @@
     function enterFingers() {
         $("#degete").fadeIn();
         $("#degeteA").get(0).play();
+        links.speak("Acelea sunt degetele. ");
     }
 
     function hideFingers() {
@@ -152,6 +156,7 @@
     function enterAll() {
         $("#tot").fadeIn();
         $("#corpulA").get(0).play();
+        links.speak("Hai sa invatam despre corpul uman. ");
     }
 
     function hideAll() {
@@ -169,25 +174,42 @@
     function enterGames() {
         $("#jocuri").fadeIn();
         $("#jocuriA").get(0).play();
+        links.speak("Hai sa ne jucam. ");
     }
 
     function hideGames() {
         $("#jocuri").fadeOut();
     }
 
-    function playTutorial(){
+    function playTutorial() {
         $("#tutorialA").get(0).play();
+        links.speak("Salut! Eu sunt pisica Sophia iar azi o sa invatam despre corpul uman. ");
+        setTimeout(function () {
+            links.speak("Pentru a naviga meniul misca mouse-ul peste patratelele colorate si da click.  ");
+        }, 5000);
+        setTimeout(function () {
+            links.speak("Daca ai uitat ce trebuie sa faci, poti sa dai click pe semnul intrebarii din coltul din dreapta sus.   ");
+        }, 10000);
     }
 
     function playTutorialAgain() {
         $("#tutorialB").get(0).play();
+        links.speak("Ai uitat ce trebuie sa faci. Nici o problema, iti voi explica din nou. ");
+        setTimeout(function () {
+            links.speak(" Pentru a alege o categorie, misca mouse-ul peste patratelele colorate si da click.  ");
+        }, 5000);
+        setTimeout(function () {
+            links.speak("Daca nu sti despre ce este patratelul, nu iti face griji. Iti voi explica cand ajungi acolo. ");
+        }, 10000);
     }
 
     function stopAllSounds() {
-        $( ".audio" ).each(function(  ) {
+        var r = $.Deferred();
+        $(".audio").each(function () {
             this.get(0).pause();
             this.get(0).currentTime = 0;
         });
+        return r;
     }
 
     $(document).on("mousemove", function (event) {
