@@ -42,10 +42,10 @@ public class Main extends Application {
             path = Main.class.getProtectionDomain().getCodeSource().getLocation().getPath();
             decodedPath = URLDecoder.decode(path, "UTF-8");
             decodedPath = decodedPath.substring(1, decodedPath.lastIndexOf("/") + 1);
-            File tmp1 = new File(decodedPath + "resources/brain16.png");
-            File tmp2 = new File(decodedPath + "resources/brain24.png");
-            File tmp3 = new File(decodedPath + "resources/brain32.png");
-            File tmp4 = new File(decodedPath + "resources/brain256.png");
+            File tmp1 = new File(decodedPath + "resources/icon16.png");
+            File tmp2 = new File(decodedPath + "resources/icon24.png");
+            File tmp3 = new File(decodedPath + "resources/icon32.png");
+            File tmp4 = new File(decodedPath + "resources/icon256.png");
             stage.getIcons().add(new Image(tmp1.toURI().toString()));
             stage.getIcons().add(new Image(tmp2.toURI().toString()));
             stage.getIcons().add(new Image(tmp3.toURI().toString()));
