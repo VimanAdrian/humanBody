@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding door effects using CSS</title>
+    <style>
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+        body{
+            background: green;
+            width: 960px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .slidingdoors div{
+            color: #fff;
+            font-family: 'Verdana';
+            font-weight: bold;
+            overflow: hidden;
+            width: 250px;
+            height: 150px;
+            position: relative;
+            float: left;
+            margin: 15px;
+            box-sizing: border-box;
+            transition: border .7s ease;
+            border-radius: 3px;
+            box-shadow:
+                    0 0 10px #000,
+                    0 0 0 5px #fff;
+        }
+        .slidetop{
+            background: url('../images/agents/backPuzzle.jpeg') right;
+            content: "DAAAAAAA";
+            border-top: solid 150px red;
+            content: "DAAAAAAA";
+            left: 20px;
+        }
+
+        .slidetop:hover{
+            border: solid 0px;
+        }
+
+        .slidebottom{
+            background: #fff url('../images/agents/crayons.png') top right;
+            border-bottom: solid 150px yellow;
+            left: 120px;
+        }
+
+        .slidebottom:hover{
+            border: solid 0px;
+        }
+
+        .slideright{
+            background: #fff url('../images/agents/rsz_capture.png') left;
+            border-right: solid 250px blue;
+            text-space: asdsa;
+            left: 70px;
+        }
+
+        .slideright:hover{
+            border: solid 0px;
+        }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+<a href="hello.html" ><img src="../images/backPort.png" height="80px" style="padding-top: 20px; padding-left: 15px;"/></a>
+<img src="../images/agents/Capture.PNG" style=" padding-left: 150px;"/>
+<div class="slidingdoors" >
+    <br><br><br><br><br><br><br><br><br>
+    <div class="slidetop" onclick="window.open('joc1.html')" ></div>
+    <div class="slideright" onclick="window.open('joc4.html')"></div>
+    <div class="slidebottom" onclick="window.open('joc2.html')"></div>
+</div>
+
+</body>
+
+</html>

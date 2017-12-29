@@ -131,7 +131,6 @@ function clearCanvasGrid(canvasID){
 
     // Restore the transform
     context.restore(); //CLEARS THE SPECIFIC CANVAS COMPLETELY FOR NEW DRAWING
-
 }
 
 function changeBack(a) {
