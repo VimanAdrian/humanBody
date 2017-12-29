@@ -2,15 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/icon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/audio/1tutorial.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/audio/2tutorial.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/audio/3cap.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/audio/4degetele.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/audio/5mana.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/audio/6picior.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/audio/7joc.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/audio/8invatam.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/audio/9back.ogg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/brain16.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/brain24.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/brain256.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resources/brain32.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/hello.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/hello.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/index.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Main.java" afterPath="$PROJECT_DIR$/src/main/java/controller/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/icon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Main$1.class" afterPath="$PROJECT_DIR$/target/classes/controller/Main$1.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/Main.class" afterPath="$PROJECT_DIR$/target/classes/controller/Main.class" />
       <change beforePath="$PROJECT_DIR$/target/humanBody-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/humanBody-1.0-SNAPSHOT.jar" />
       <change beforePath="$PROJECT_DIR$/target/jfx/app/humanBody-1.0-SNAPSHOT-jfx.jar" afterPath="$PROJECT_DIR$/target/jfx/app/humanBody-1.0-SNAPSHOT-jfx.jar" />
-      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/html/hello.html" afterPath="$PROJECT_DIR$/target/jfx/app/resources/html/hello.html" />
-      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/html/index.html" afterPath="$PROJECT_DIR$/target/jfx/app/resources/html/index.html" />
-      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/humanBody-1.0-SNAPSHOT.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/humanBody-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/jfx/app/resources/humanBody-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/videos/cap.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/videos/corp.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/videos/degete.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/videos/maini.mp4" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/videos/picioare.mp4" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -28,21 +45,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="invatam.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/invatam.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="56" column="8" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,7 +112,6 @@
         <option value="$PROJECT_DIR$/src/main/java/resources/javascript/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/src/main/java/resources/javascript/boot.js" />
         <option value="$PROJECT_DIR$/src/main/java/resources/javascript/bootstrap.js" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/resources/css/clippy.css" />
         <option value="$PROJECT_DIR$/src/main/java/resources/javascript/clippy.js" />
@@ -130,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/main/java/resources/html/invatam.html" />
         <option value="$PROJECT_DIR$/src/main/java/resources/html/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/resources/html/hello.html" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/Main.java" />
       </list>
     </option>
   </component>
@@ -216,7 +219,33 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanBody" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanBody" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanBody" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="jfx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
+              <item name="humanBody" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="jfx" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -234,11 +263,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Facultate\An 3\hci\humanBody\src\main\java\resources" />
       <recent name="D:\Facultate\An 3\hci\humanBody\src\main\java" />
       <recent name="D:\Facultate\An 3\hci\humanBody\src\main\java\resources\images" />
       <recent name="D:\Facultate\An 3\hci\humanBody\src\main\java\resources\audio" />
       <recent name="D:\Facultate\humanBody\src\main\java\resources\html" />
-      <recent name="D:\Facultate\humanBody\src\main\java\resources\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Facultate\An 3\hci\humanBody\src\main\java\resources" />
@@ -262,8 +291,16 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/jfx/app/humanBody-1.0-SNAPSHOT-jfx.jar</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/jfx/app/resources/html/joc4.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/html/cap.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/html/corp.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/html/degete.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/html/maini.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/html/picior.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/jfx/app/resources/html/cap.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/jfx/app/resources/html/corp.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/jfx/app/resources/html/degete.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/jfx/app/resources/html/maini.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/jfx/app/resources/html/picior.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -271,8 +308,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/images/backGrey.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/images/backPort.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/cap-1.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/corp-1.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/degete-1.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/maini-1.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/picioare-1.mp4</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -280,6 +320,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/cap.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/corp.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/degete.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/maini.mp4</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/resources/videos/picioare.mp4</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -423,9 +468,10 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="humanBody-1.0-SNAPSHOT-jfx.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+    <configuration name="Run build" type="JarApplication" factoryName="JAR Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="JAR_PATH" value="$PROJECT_DIR$/target/jfx/app/humanBody-1.0-SNAPSHOT-jfx.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
     </configuration>
     <configuration name="Build" type="MavenRunConfiguration" factoryName="Maven">
@@ -831,11 +877,11 @@
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Maven.Run" />
       <item index="1" class="java.lang.String" itemvalue="Maven.Build" />
-      <item index="2" class="java.lang.String" itemvalue="JAR Application.humanBody-1.0-SNAPSHOT-jfx.jar" />
+      <item index="2" class="java.lang.String" itemvalue="JAR Application.Run build" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JAR Application.humanBody-1.0-SNAPSHOT-jfx.jar" />
+        <item index="0" class="java.lang.String" itemvalue="JAR Application.Run build" />
       </list>
     </recent_temporary>
   </component>
@@ -874,7 +920,7 @@
       <workItem from="1513684514808" duration="9818000" />
       <workItem from="1514543470884" duration="9013000" />
       <workItem from="1514552965171" duration="63000" />
-      <workItem from="1514553094775" duration="12496000" />
+      <workItem from="1514553094775" duration="15513000" />
     </task>
     <task id="LOCAL-00001" summary="cantelec youtube">
       <created>1511703048510</created>
@@ -1037,15 +1083,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514566305786</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="icon">
+      <created>1514568468961</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1514568468961</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90850000" />
+    <option name="totallyTimeSpent" value="93867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1053,10 +1105,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14070891" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23922414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2394822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28694713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1113,7 +1165,8 @@
     <MESSAGE value="games styles, by Big Shaq" />
     <MESSAGE value="?" />
     <MESSAGE value="added the cat almost everywhere, loading screens almost everywhere, added learning menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the cat almost everywhere, loading screens almost everywhere, added learning menu" />
+    <MESSAGE value="icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1122,8 +1175,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/sample/Controller.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/sample.fxml" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Class.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/sample/WebViewSample.java" />
@@ -1199,13 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/agents/Bonzi/map.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1215,13 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="605">
           <caret line="6239" column="11" lean-forward="false" selection-start-line="6239" selection-start-column="11" selection-end-line="6239" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Browser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="59" column="92" lean-forward="false" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -1317,8 +1354,8 @@
         <state relative-caret-position="479">
           <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1328,7 +1365,7 @@
         <state relative-caret-position="605">
           <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1338,8 +1375,8 @@
         <state relative-caret-position="80">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="43" selection-end-column="12" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1349,7 +1386,7 @@
         <state relative-caret-position="458">
           <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1372,14 +1409,14 @@
         <state relative-caret-position="567">
           <caret line="219" column="7" lean-forward="false" selection-start-line="116" selection-start-column="4" selection-end-line="219" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#audio#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#audio#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#audio#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#6;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#7;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#8;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1397,18 +1434,47 @@
         <state relative-caret-position="521">
           <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/invatam.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="56" column="8" lean-forward="false" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
+        <state relative-caret-position="378">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Browser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/icon32.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/icon16.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding>
+            <element signature="e#2180#2181#0" expanded="true" />
+            <element signature="e#2208#2209#0" expanded="true" />
           </folding>
         </state>
       </provider>
