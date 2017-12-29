@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Capul</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/clippy.css" media="all">
+    <script src="../javascript/jquery-3.2.1.js"></script>
+    <style>
+        .no-js #loader {
+            display: none;
+        }
+
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("../images/Preloader_8.gif") center no-repeat #fff;
+        }
+    </style>
+</head>
+<body style="background-color: #98BB6B;">
+<div class="se-pre-con"></div>
+<div>
+    <a href="hello.html"><img src="../images/back.png" height="80px" style="padding-top: 20px; padding-left: 15px;"/></a>
+    <img src="../images/hai%20sa%20invatam%20text.png" style=" padding-left: 200px;"/>
+    <div style="height: 620px; width: 980px; margin: auto; display: block;">
+        <img src="../images/invatam.png" usemap="#menu" id="fundal" style="position: absolute;top: 111px;left: 26px;z-index: 0;"/>
+        <img src="../images/invatam%20diversitate.png" usemap="#menu" id="diversitate" style="position: absolute;top: 111px;left: 26px;z-index: 1; display:none;"/>
+        <img src="../images/invatam%20parti.png" usemap="#menu" id="parti" style="position: absolute;top: 111px;left: 26px;z-index: 0;display:none;"/>
+        <img src="../images/invatam%20ingrijire.png" usemap="#menu" id="ingrijire" style="position: absolute;top: 111px;left: 26px;z-index: 0; display:none;"/>
+    <map name="menu">
+        <area shape="rect" coords="25,160,375,400" href="diversitate.html" onmouseover="enterDiversitate()" onmouseout="hideDiversitate()">
+        <area shape="rect" coords="596,23,951,267" href="parti.html" onmouseover="enterParti()" onmouseout="hideParti()">
+        <area shape="rect" coords="500,300,856,574" href="ingrijire.html" onmouseover="enterIngrijire()" onmouseout="hideIngrijire()">
+    </map>
+    </div>
+</div>
+</body>
+<script src="../javascript/clippy.js"></script>
+<script>
+
+    var links;
+    $(document).ready(function () {
+        //loads and positions agent
+        window.CLIPPY_CDN = '../images/agents/';
+        clippy.load('Links', function (agent) {
+            // do anything with the loaded agent
+            links = agent;
+            links.show();
+            links.moveTo(300, 130);
+        });
+
+        //give a bit of time for agent to load, then play tutorial
+        setTimeout(function () {
+            $(".se-pre-con").fadeOut("slow");
+        }, 1000);
+    });
+
+    function enterDiversitate() {
+        $("#diversitate").fadeIn();
+    }
+    function hideDiversitate() {
+        $("#diversitate").fadeOut();
+    }
+    function enterIngrijire() {
+        $("#ingrijire").fadeIn();
+    }
+    function hideIngrijire() {
+        $("#ingrijire").fadeOut();
+    }
+    function enterParti() {
+        $("#parti").fadeIn();
+    }
+    function hideParti() {
+        $("#parti").fadeOut();
+    }
+</script>
+</html>
