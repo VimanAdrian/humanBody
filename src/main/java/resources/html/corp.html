@@ -4,19 +4,75 @@
     <meta charset="UTF-8">
     <title>Capul</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/clippy.css" media="all">
     <script src="../javascript/jquery-3.2.1.js"></script>
-</head>
+    <style>
+        .no-js #loader {
+            display: none;
+        }
 
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("../images/Preloader_8.gif") center no-repeat #fff;
+        }
+    </style>
+</head>
 <body style="background-color: #FEC627;">
+<div class="se-pre-con"></div>
 <div>
     <a href="hello.html" ><img src="../images/back.png" height="80px" style="padding-top: 20px; padding-left: 15px;"/></a>
     <img src="../images/corpul%20uman%20text.PNG" style=" padding-left: 150px;"/>
-    <video controls autoplay height="640px" width="1000px" style="height: 620px; width: 980px; margin: auto; display: block;">
+    <video id="video" controls height="640px" width="1000px" style="height: 620px; width: 980px; margin: auto; display: block;">
         <!--trebuie schimbat videoul-->
         <source src="../videos/corp.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <audio style="display: none;" controls id="tutorialA" class="audio">
+        <source src="../audio/9back.mp3" type="audio/mpeg">
+    </audio>
 </div>
-
 </body>
+<script src="../javascript/clippy.js"></script>
+<script>
+
+    var links;
+    $(document).ready(function () {
+        //loads and positions agent
+        window.CLIPPY_CDN = '../images/agents/';
+        clippy.load('Links', function (agent) {
+            // do anything with the loaded agent
+            links = agent;
+            links.show();
+            links.moveTo(900, 40);
+        });
+
+        //give a bit of time for agent to load, then play tutorial
+        setTimeout(function () {
+            $(".se-pre-con").fadeOut("slow");
+            playTutorial();
+        }, 1000);
+
+        //play video
+        setTimeout(function () {
+            $("#video").get(0).play();
+        }, 9000);
+    });
+
+    function playTutorial() {
+        $("#tutorialA").get(0).play();
+        links.speak("Ai gasit un cantecel. Daca vrei sa mergi inapoi la meniul principal, da click pe sagata din coltul  de stanga sus. ");
+    }
+</script>
 </html>

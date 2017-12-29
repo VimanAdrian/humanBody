@@ -44,9 +44,7 @@ function start_puzzle(x) {
         while (globalIndex === index && index < photosArray.length){
             index = Math.floor((Math.random() * photosArray.length) + 1);
         }
-        console.log("2Global :",globalIndex, "Local : ",index);
         globalIndex = index;
-        console.log("3Global :",globalIndex, "Local : ",index);
     $("#source_image").attr('src', photosArray[globalIndex]);
 
     $('#puzzle_solved').hide();

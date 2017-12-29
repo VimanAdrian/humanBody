@@ -7,8 +7,17 @@
     <script src="../javascript/jquery-3.2.1.js"></script>
     <meta charset="utf-8">
     <style>
-        .no-js #loader { display: none;  }
-        .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+        .no-js #loader {
+            display: none;
+        }
+
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
         .se-pre-con {
             position: fixed;
             left: 0px;
@@ -23,61 +32,73 @@
 <body style="background-color: #3EB3A0">
 <div class="se-pre-con"></div>
 <div style="position: relative">
-    <img src="../images/fundal.png" width="1000px" height="720px" usemap="#menu" id="fundal" style="position: absolute;top: 0;left: 0;z-index: 1;">
+    <img src="../images/fundal.png" width="1000px" height="720px" usemap="#menu" id="fundal"
+         style="position: absolute;top: 0;left: 0;z-index: 1;">
 
-    <img src="../images/black%20-%20tot.png" width="1000px" height="720px" usemap="#menu" id="tot" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
-    <img src="../images/black%20-%20cap.png" width="1000px" height="720px" usemap="#menu" id="cap" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
-    <img src="../images/black%20-%20mana.png" width="1000px" height="720px" usemap="#menu" id="mana" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
-    <img src="../images/black%20-%20degete.png" width="1000px" height="720px" usemap="#menu" id="degete" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
-    <img src="../images/black%20-%20picior.png" width="1000px" height="720px" usemap="#menu" id="picior" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
-    <img src="../images/intrebare.png" width="1000px" height="720px" usemap="#menu" id="intrebare" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
-    <img src="../images/games.png" width="1000px" height="720px" usemap="#menu" id="jocuri" style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/black%20-%20tot.png" width="1000px" height="720px" usemap="#menu" id="tot"
+         style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/black%20-%20cap.png" width="1000px" height="720px" usemap="#menu" id="cap"
+         style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/black%20-%20mana.png" width="1000px" height="720px" usemap="#menu" id="mana"
+         style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/black%20-%20degete.png" width="1000px" height="720px" usemap="#menu" id="degete"
+         style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/black%20-%20picior.png" width="1000px" height="720px" usemap="#menu" id="picior"
+         style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/intrebare.png" width="1000px" height="720px" usemap="#menu" id="intrebare"
+         style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
+    <img src="../images/games.png" width="1000px" height="720px" usemap="#menu" id="jocuri"
+         style="position: absolute;top: 0;left: 0;z-index: 1; display: none">
 
     <map name="menu">
         <area shape="rect" coords="430,15,746,150" href="cap.html" onmouseover="enterHead()" onmouseout="hideHead()">
         <area shape="rect" coords="590,170,743,402" href="maini.html" onmouseover="enterHand()" onmouseout="hideHand()">
-        <area shape="rect" coords="595,420,745,697" href="picior.html" onmouseover="enterFoot()" onmouseout="hideFoot()">
-        <area shape="rect" coords="272,249,551,452" href="degete.html" onmouseover="enterFingers()" onmouseout="hideFingers()">
-        <area shape="rect" coords="272,20,411,223" href="corp.html" onmouseover="enterAll()" onmouseout="hideAll()">
-        <area shape="rect" coords="265,470,570,700" href="MeniuJocuri.html" onmouseover="enterGames()" onmouseout="hideGames()">
-        <area shape="rect" coords="820,0,1000,210" href="#" onmouseover="enterQuestion()" onmouseout="hideQuestion()" onclick="playTutorial()">
+        <area shape="rect" coords="595,420,745,697" href="picior.html" onmouseover="enterFoot()"
+              onmouseout="hideFoot()">
+        <area shape="rect" coords="272,249,551,452" href="degete.html" onmouseover="enterFingers()"
+              onmouseout="hideFingers()">
+        <area shape="rect" coords="272,20,411,223" href="invatam.html" onmouseover="enterAll()" onmouseout="hideAll()">
+        <area shape="rect" coords="265,470,570,700" href="MeniuJocuri.html" onmouseover="enterGames()"
+              onmouseout="hideGames()">
+        <area shape="rect" coords="820,0,1000,210" href="#" onmouseover="enterQuestion()" onmouseout="hideQuestion()"
+              onclick="playTutorialAgain()">
     </map>
 
-    <audio style="display: none;" controls id="fartA">
-        <source src="../audio/fart.mp3" type="audio/mpeg">
+    <audio style="display: none;" controls id="corpulA" class="audio">
+        <source src="../audio/8invatam.mp3" type="audio/mpeg">
     </audio>
-    <audio style="display: none;" controls id="corpulA">
-        <source src="../audio/corpul%20uman.mp3" type="audio/mpeg">
+    <audio style="display: none;" controls id="capA" class="audio">
+        <source src="../audio/3cap.mp3" type="audio/mpeg">
     </audio>
-    <audio style="display: none;" controls id="capA">
-        <source src="../audio/cap.mp3" type="audio/mpeg">
+    <audio style="display: none;" controls id="degeteA" class="audio">
+        <source src="../audio/4degetele.mp3" type="audio/mpeg">
     </audio>
-    <audio style="display: none;" controls id="degeteA">
-        <source src="../audio/degete.mp3" type="audio/mpeg">
-    </audio>
-    <audio style="display: none;" controls id="hapciuA">
+    <audio style="display: none;" controls id="hapciuA" class="audio">
         <source src="../audio/hapciu.mp3" type="audio/mpeg">
     </audio>
-    <audio style="display: none;" controls id="jocuriA">
-        <source src="../audio/jocuri.mp3" type="audio/mpeg">
+    <audio style="display: none;" controls id="jocuriA" class="audio">
+        <source src="../audio/7joc.mp3" type="audio/mpeg">
     </audio>
-    <audio style="display: none;" controls id="manaA">
-        <source src="../audio/mana.mp3" type="audio/mpeg">
+    <audio style="display: none;" controls id="manaA" class="audio">
+        <source src="../audio/5mana.mp3" type="audio/mpeg">
     </audio>
-    <audio style="display: none;" controls id="piciorA">
-        <source src="../audio/picior.mp3" type="audio/mpeg">
+    <audio style="display: none;" controls id="piciorA" class="audio">
+        <source src="../audio/6picior.mp3" type="audio/mpeg">
     </audio>
-    <audio style="display: none;" controls id="tutorialA">
-        <source src="../audio/tutorial.mp3" type="audio/mpeg">
+    <audio style="display: none;" controls id="tutorialA" class="audio">
+        <source src="../audio/1tutorial.mp3" type="audio/mpeg">
+    </audio>
+    <audio style="display: none;" controls id="tutorialB" class="audio">
+        <source src="../audio/2tutorial.mp3" type="audio/mpeg">
     </audio>
 </div>
 </body>
 <script src="../javascript/clippy.js"></script>
 <script>
 
+    var links;
     $(document).ready(function () {
         //loads and positions agent
-        var links;
         window.CLIPPY_CDN = '../images/agents/';
         clippy.load('Links', function (agent) {
             // do anything with the loaded agent
@@ -88,8 +109,7 @@
 
         //give a bit of time for agent to load, then play tutorial
         setTimeout(function () {
-            $(".se-pre-con").fadeOut("slow");;
-            links.speak("Pentru a ne juca cu copilasul, mutati mouse-ul pe patratele colorate si dati click. ");
+            $(".se-pre-con").fadeOut("slow");
             playTutorial();
         }, 3000);
     });
@@ -97,59 +117,106 @@
     function enterHead() {
         $("#cap").fadeIn();
         $("#capA").get(0).play();
+        links.speak("Acela este capul. ");
     }
+
     function hideHead() {
         $("#cap").fadeOut();
     }
+
     function enterFoot() {
         $("#picior").fadeIn();
         $("#piciorA").get(0).play();
+        links.speak("Acela este un picior. ");
     }
+
     function hideFoot() {
         $("#picior").fadeOut();
     }
+
     function enterHand() {
         $("#mana").fadeIn();
         $("#manaA").get(0).play();
+        links.speak("Acela este capul. ");
     }
+
     function hideHand() {
         $("#mana").fadeOut();
     }
+
     function enterFingers() {
         $("#degete").fadeIn();
         $("#degeteA").get(0).play();
+        links.speak("Acelea sunt degetele. ");
     }
+
     function hideFingers() {
         $("#degete").fadeOut();
     }
+
     function enterAll() {
         $("#tot").fadeIn();
         $("#corpulA").get(0).play();
+        links.speak("Hai sa invatam despre corpul uman. ");
     }
+
     function hideAll() {
         $("#tot").fadeOut();
     }
-    function enterQuestion(){
+
+    function enterQuestion() {
         $("#intrebare").fadeIn();
     }
-    function hideQuestion(){
+
+    function hideQuestion() {
         $("#intrebare").fadeOut();
     }
+
     function enterGames() {
         $("#jocuri").fadeIn();
         $("#jocuriA").get(0).play();
+        links.speak("Hai sa ne jucam. ");
     }
+
     function hideGames() {
         $("#jocuri").fadeOut();
     }
-    function playTutorial(){
+
+    function playTutorial() {
         $("#tutorialA").get(0).play();
+        links.speak("Salut! Eu sunt pisica Sophia iar azi o sa invatam despre corpul uman. ");
+        setTimeout(function () {
+            links.speak("Pentru a naviga meniul misca mouse-ul peste patratelele colorate si da click.  ");
+        }, 5000);
+        setTimeout(function () {
+            links.speak("Daca ai uitat ce trebuie sa faci, poti sa dai click pe semnul intrebarii din coltul din dreapta sus.   ");
+        }, 10000);
     }
-    $( document ).on( "mousemove", function( event ) {
-        if(event.pageX>504 && event.pageX<523 && event.pageY > 72 && event.pageY < 91){
+
+    function playTutorialAgain() {
+        $("#tutorialB").get(0).play();
+        links.speak("Ai uitat ce trebuie sa faci. Nici o problema, iti voi explica din nou. ");
+        setTimeout(function () {
+            links.speak(" Pentru a alege o categorie, misca mouse-ul peste patratelele colorate si da click.  ");
+        }, 5000);
+        setTimeout(function () {
+            links.speak("Daca nu sti despre ce este patratelul, nu iti face griji. Iti voi explica cand ajungi acolo. ");
+        }, 10000);
+    }
+
+    function stopAllSounds() {
+        var r = $.Deferred();
+        $(".audio").each(function () {
+            this.get(0).pause();
+            this.get(0).currentTime = 0;
+        });
+        return r;
+    }
+
+    $(document).on("mousemove", function (event) {
+        if (event.pageX > 504 && event.pageX < 523 && event.pageY > 72 && event.pageY < 91) {
             $("#hapciuA").get(0).play();
         }
     });
-
 </script>
 </html>
