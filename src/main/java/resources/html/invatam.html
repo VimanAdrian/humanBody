@@ -32,19 +32,44 @@
 <body style="background-color: #98BB6B;">
 <div class="se-pre-con"></div>
 <div>
-    <a href="hello.html"><img src="../images/back.png" height="80px" style="padding-top: 20px; padding-left: 15px;"/></a>
+    <a href="hello.html"><img src="../images/back.png" height="80px"
+                              style="padding-top: 20px; padding-left: 15px;"/></a>
     <img src="../images/hai%20sa%20invatam%20text.png" style=" padding-left: 200px;"/>
     <div style="height: 620px; width: 980px; margin: auto; display: block;">
-        <img src="../images/invatam.png" usemap="#menu" id="fundal" style="position: absolute;top: 111px;left: 26px;z-index: 0;"/>
-        <img src="../images/invatam%20diversitate.png" usemap="#menu" id="diversitate" style="position: absolute;top: 111px;left: 26px;z-index: 1; display:none;"/>
-        <img src="../images/invatam%20parti.png" usemap="#menu" id="parti" style="position: absolute;top: 111px;left: 26px;z-index: 0;display:none;"/>
-        <img src="../images/invatam%20ingrijire.png" usemap="#menu" id="ingrijire" style="position: absolute;top: 111px;left: 26px;z-index: 0; display:none;"/>
-    <map name="menu">
-        <area shape="rect" coords="25,160,375,400" href="diversitate.html" onmouseover="enterDiversitate()" onmouseout="hideDiversitate()">
-        <area shape="rect" coords="596,23,951,267" href="parti.html" onmouseover="enterParti()" onmouseout="hideParti()">
-        <area shape="rect" coords="500,300,856,574" href="ingrijire.html" onmouseover="enterIngrijire()" onmouseout="hideIngrijire()">
-    </map>
+        <img src="../images/invatam.png" usemap="#menu" id="fundal"
+             style="position: absolute;top: 111px;left: 26px;z-index: 0;"/>
+        <img src="../images/invatam%20diversitate.png" usemap="#menu" id="diversitate"
+             style="position: absolute;top: 111px;left: 26px;z-index: 1; display:none;"/>
+        <img src="../images/invatam%20parti.png" usemap="#menu" id="parti"
+             style="position: absolute;top: 111px;left: 26px;z-index: 0;display:none;"/>
+        <img src="../images/invatam%20ingrijire.png" usemap="#menu" id="ingrijire"
+             style="position: absolute;top: 111px;left: 26px;z-index: 0; display:none;"/>
+        <map name="menu">
+            <area shape="rect" coords="25,160,375,400" href="diversitate1.html" onmouseover="enterDiversitate()"
+                  onmouseout="hideDiversitate()">
+            <area shape="rect" coords="596,23,951,267" href="parti1.html" onmouseover="enterParti()"
+                  onmouseout="hideParti()">
+            <area shape="rect" coords="500,300,856,574" href="ingrijire1.html" onmouseover="enterIngrijire()"
+                  onmouseout="hideIngrijire()">
+        </map>
     </div>
+
+    <audio style="display: none;" controls id="tutorialA" class="audio">
+        <source src="../audio/10invatam.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio style="display: none;" controls id="diversitateA" class="audio">
+        <source src="../audio/11diversitate.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio style="display: none;" controls id="partiA" class="audio">
+        <source src="../audio/12parti.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio style="display: none;" controls id="ingrijireA" class="audio">
+        <source src="../audio/13ingrijire.mp3" type="audio/mpeg">
+    </audio>
+
 </div>
 </body>
 <script src="../javascript/clippy.js"></script>
@@ -64,26 +89,43 @@
         //give a bit of time for agent to load, then play tutorial
         setTimeout(function () {
             $(".se-pre-con").fadeOut("slow");
+            playTutorial();
         }, 1000);
     });
 
     function enterDiversitate() {
         $("#diversitate").fadeIn();
+        $("#diversitateA").get(0).play();
+        links.speak("Hai sa invatam despre diversitatea oamenilor. ");
     }
+
     function hideDiversitate() {
         $("#diversitate").fadeOut();
     }
+
     function enterIngrijire() {
         $("#ingrijire").fadeIn();
+        $("#ingrijireA").get(0).play();
+        links.speak("Hai sa invatam cum sa avem grija de corpul nostru. ");
     }
+
     function hideIngrijire() {
         $("#ingrijire").fadeOut();
     }
+
     function enterParti() {
         $("#parti").fadeIn();
+        $("#partiA").get(0).play();
+        links.speak("Hai sa invatam despre diferitele parti ale corpului. ");
     }
+
     function hideParti() {
         $("#parti").fadeOut();
+    }
+
+    function playTutorial() {
+        $("#tutorialA").get(0).play();
+        links.speak("Ma bucur ca vrei sa invatam. Te rog sa misti mouse-ul peste unul din patratelele colorate pentru a alege despre ce vrei sa invatam. ");
     }
 </script>
 </html>
