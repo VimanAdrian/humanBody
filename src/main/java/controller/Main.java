@@ -16,8 +16,12 @@ public class Main extends Application {
 
     private Scene scene;
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     @Override
-    public void start(Stage stage) throws Exception{
+    public void start(Stage stage) throws Exception {
         // create scene
         stage.setTitle("Corpul uman");
         scene = new Scene(new Browser(stage), 1020, 740, Color.web("#FFFFFF"));
@@ -50,15 +54,10 @@ public class Main extends Application {
             stage.getIcons().add(new Image(tmp2.toURI().toString()));
             stage.getIcons().add(new Image(tmp3.toURI().toString()));
             stage.getIcons().add(new Image(tmp4.toURI().toString()));
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("no icon");
         }
         // show stage
         stage.show();
-    }
-
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }

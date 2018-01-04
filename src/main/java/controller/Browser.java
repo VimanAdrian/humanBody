@@ -3,34 +3,16 @@ package controller;
 
 import javafx.application.Platform;
 import javafx.beans.value.ObservableValue;
-import javafx.collections.ListChangeListener;
 import javafx.concurrent.Worker;
-import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.geometry.HPos;
-import javafx.geometry.Pos;
 import javafx.geometry.VPos;
-import javafx.print.PrinterJob;
-import javafx.scene.Node;
-import javafx.scene.control.*;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
-import javafx.scene.web.PopupFeatures;
 import javafx.scene.web.WebEngine;
-import javafx.scene.web.WebHistory;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import netscape.javascript.JSObject;
-import org.apache.commons.io.IOUtils;
 
 import java.io.File;
-import java.io.InputStream;
-import java.io.StringWriter;
 import java.net.URLDecoder;
 import java.util.Arrays;
 
@@ -67,15 +49,15 @@ public class Browser extends Region {
             System.out.println(Arrays.toString(e.getStackTrace()));
             String error =
                     "<html>\n" +
-                    "<header>" +
+                            "<header>" +
                             "<title>Eroare</title>" +
-                    "</header>\n" +
-                    "<body>\n" +
-                        "<p>Ceva a mers gresit. Oooops. </p>" +
-                        "<p>Ne cerem scuze pentru asta. Va rugam sa incercati sa reinstalati aplicatia." +
-                        "<p>Multumim</p>" +
-                    "</body>\n" +
-                    "</html>";
+                            "</header>\n" +
+                            "<body>\n" +
+                            "<p>Ceva a mers gresit. Oooops. </p>" +
+                            "<p>Ne cerem scuze pentru asta. Va rugam sa incercati sa reinstalati aplicatia." +
+                            "<p>Multumim</p>" +
+                            "</body>\n" +
+                            "</html>";
             webEngine.loadContent(error);
         }
         getChildren().add(browser);

@@ -68,7 +68,7 @@
 
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
         /* Caption text */
@@ -93,7 +93,7 @@
 
         /* The dots/bullets/indicators */
         .dot {
-            cursor:pointer;
+            cursor: pointer;
             height: 15px;
             width: 15px;
             margin: 0 2px;
@@ -116,16 +116,24 @@
         }
 
         @-webkit-keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
         }
 
         @keyframes fade {
-            from {opacity: .4}
-            to {opacity: 1}
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
         }
 
-        .slideshow-image{
+        .slideshow-image {
             width: 100%;
             max-height: 450px;
         }
@@ -134,9 +142,11 @@
 <body style="background-color: #9BD5D7;overflow:hidden;">
 <div class="se-pre-con"></div>
 <div>
-    <a href="ingrijire3.html"><img src="../images/back.png" height="80px" style="padding-top: 20px; padding-left: 15px;"/></a>
+    <a href="ingrijire3.html"><img src="../images/back.png" height="80px"
+                                   style="padding-top: 20px; padding-left: 15px;"/></a>
     <img src="../images/ingrijire%20text.PNG" style="padding-left: 250px;"/>
-    <a href="invatam.html"><img src="../images/forward.png" height="80px" style="padding-top: 20px; padding-left: 250px;"/></a>
+    <a href="invatam.html"><img src="../images/forward.png" height="80px"
+                                style="padding-top: 20px; padding-left: 250px;"/></a>
     <div style="height: 620px; width: 980px; margin: auto; display: block;">
         <div class="slideshow-container borderbox">
 
@@ -250,12 +260,14 @@
             slides[i].style.display = "none";
         }
         slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
 
@@ -275,16 +287,20 @@
         var i;
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
         for (i = 0; i < dots.length; i++) {
             dots[i].className = dots[i].className.replace(" active", "");
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
     }
 </script>
 </html>

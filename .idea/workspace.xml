@@ -3,15 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/diversitate3.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/diversitate3.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Browser.java" afterPath="$PROJECT_DIR$/src/main/java/controller/Browser.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Main.java" afterPath="$PROJECT_DIR$/src/main/java/controller/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/MeniuJocuri.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/MeniuJocuri.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/cap.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/cap.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/corp.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/corp.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/degete.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/degete.html" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/diversitate4.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/diversitate4.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/hello.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/hello.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/index.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/ingrijire1.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/ingrijire1.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/ingrijire2.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/ingrijire2.html" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/ingrijire3.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/ingrijire3.html" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/ingrijire4.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/ingrijire4.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/parti2.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/parti2.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/joc1.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/joc1.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/joc2.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/joc2.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/joc4.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/joc4.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/jocuri.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/jocuri.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/maini.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/maini.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/parti1.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/parti1.html" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/parti3.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/parti3.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/html/picior.html" afterPath="$PROJECT_DIR$/src/main/java/resources/html/picior.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/agents/Capture.PNG" afterPath="$PROJECT_DIR$/src/main/java/resources/images/Capture.PNG" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/agents/backPuzzle.jpeg" afterPath="$PROJECT_DIR$/src/main/java/resources/images/backPuzzle.jpeg" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/agents/background_desen.jpg" afterPath="$PROJECT_DIR$/src/main/java/resources/images/background_desen.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/agents/crayons.png" afterPath="$PROJECT_DIR$/src/main/java/resources/images/crayons.png" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/agents/match.jpg" afterPath="$PROJECT_DIR$/src/main/java/resources/images/match.jpg" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resources/images/agents/rsz_capture.png" afterPath="$PROJECT_DIR$/src/main/java/resources/images/rsz_capture.png" />
+      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/html/hello.html" afterPath="$PROJECT_DIR$/target/jfx/app/resources/html/hello.html" />
+      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/html/index.html" afterPath="$PROJECT_DIR$/target/jfx/app/resources/html/index.html" />
+      <change beforePath="$PROJECT_DIR$/target/jfx/app/resources/html/joc1.html" afterPath="$PROJECT_DIR$/target/jfx/app/resources/html/joc1.html" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,11 +59,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="MeniuJocuri.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MeniuJocuri.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/MeniuJocuri.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="351">
-              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -56,6 +74,26 @@
                 <element signature="n#style#0;n#img#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="diversitate3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/diversitate3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="245" column="32" lean-forward="false" selection-start-line="245" selection-start-column="32" selection-end-line="245" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Browser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/Browser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -302,52 +340,6 @@
             <path>
               <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
               <item name="humanBody" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="audio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanBody" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanBody" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanBody" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="agents" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanBody" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="videos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humanBody" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humanBody" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -387,8 +379,8 @@
       <recent name="D:\Facultate\An 3\hci\humanBody\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Facultate\An 3\hci\humanBody\src\main\java\resources" />
       <recent name="D:\Facultate\An 3\hci\humanBody\src\main\java\resources\images" />
+      <recent name="D:\Facultate\An 3\hci\humanBody\src\main\java\resources" />
       <recent name="D:\An 3\humanBodyFinal ReallyNow\humanBody\src\main\java\resources\images\agents" />
       <recent name="D:\Facultate\humanBody\src\main\java\resources\javascript" />
       <recent name="D:\Facultate\humanBody\src\main\java\resources\css" />
@@ -912,7 +904,7 @@
       <workItem from="1514726782110" duration="3559000" />
       <workItem from="1514735585558" duration="406000" />
       <workItem from="1514991348063" duration="16964000" />
-      <workItem from="1515085434507" duration="4300000" />
+      <workItem from="1515085434507" duration="4698000" />
     </task>
     <task id="LOCAL-00001" summary="cantelec youtube">
       <created>1511703048510</created>
@@ -1145,15 +1137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1515090190511</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fixed typos">
+      <created>1515090296485</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1515090296485</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121347000" />
+    <option name="totallyTimeSpent" value="121745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1167,8 +1165,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19065522" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19065522" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14070891" sideWeight="0.505295" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1191,7 +1190,6 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21180555" sideWeight="0.49529412" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1226,7 +1224,8 @@
     <MESSAGE value="who knows...." />
     <MESSAGE value="added a bunch more sounds, finished the learning part" />
     <MESSAGE value="added links to games" />
-    <option name="LAST_COMMIT_MESSAGE" value="added links to games" />
+    <MESSAGE value="fixed typos" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed typos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1374,14 +1373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Browser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="64" column="46" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/cap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -1394,6 +1385,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#audio#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1401,16 +1398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="216" column="44" lean-forward="false" selection-start-line="216" selection-start-column="30" selection-end-line="216" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/diversitate3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
-          <caret line="217" column="44" lean-forward="false" selection-start-line="217" selection-start-column="30" selection-end-line="217" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#audio#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -1502,32 +1489,32 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/agents/backPuzzle.jpeg">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/backPuzzle.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/agents/background_desen.jpg">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/background_desen.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/agents/Capture.PNG">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/Capture.PNG">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/agents/rsz_capture.png">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/rsz_capture.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/agents/match.jpg">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/match.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/agents/crayons.png">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/images/crayons.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1586,7 +1573,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/MeniuJocuri.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
-          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1597,6 +1584,22 @@
             <element signature="n#style#0;n#img#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/html/diversitate3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="245" column="32" lean-forward="false" selection-start-line="245" selection-start-column="32" selection-end-line="245" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Browser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
