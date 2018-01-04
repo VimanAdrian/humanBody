@@ -1,82 +1,128 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Sliding door effects using CSS</title>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/clippy.css" media="all">
+    <script src="../javascript/jquery-3.2.1.js"></script>
     <style>
-        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-        body{
-            background: green;
-            width: 960px;
-            margin: 0 auto;
-            padding: 15px;
+        .no-js #loader {
+            display: none;
         }
 
-        .slidingdoors div{
-            color: #fff;
-            font-family: 'Verdana';
-            font-weight: bold;
-            overflow: hidden;
-            width: 250px;
-            height: 150px;
-            position: relative;
-            float: left;
-            margin: 15px;
-            box-sizing: border-box;
-            transition: border .7s ease;
-            border-radius: 3px;
-            box-shadow:
-                    0 0 10px #000,
-                    0 0 0 5px #fff;
-        }
-        .slidetop{
-            background: url('../images/agents/backPuzzle.jpeg') right;
-            content: "DAAAAAAA";
-            border-top: solid 150px red;
-            content: "DAAAAAAA";
-            left: 20px;
+        .js #loader {
+            display: block;
+            position: absolute;
+            left: 100px;
+            top: 0;
         }
 
-        .slidetop:hover{
-            border: solid 0px;
-        }
-
-        .slidebottom{
-            background: #fff url('../images/agents/crayons.png') top right;
-            border-bottom: solid 150px yellow;
-            left: 120px;
-        }
-
-        .slidebottom:hover{
-            border: solid 0px;
-        }
-
-        .slideright{
-            background: #fff url('../images/agents/rsz_capture.png') left;
-            border-right: solid 250px blue;
-            text-space: asdsa;
-            left: 70px;
-        }
-
-        .slideright:hover{
-            border: solid 0px;
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url("../images/Preloader_8.gif") center no-repeat #fff;
         }
 
     </style>
     <script src="../javascript/prefixfree.min.js"></script>
 </head>
 
-<body>
-<a href="hello.html" ><img src="../images/backPort.png" height="80px" style="padding-top: 20px; padding-left: 15px;"/></a>
-<img src="../images/agents/Capture.PNG" style=" padding-left: 150px;"/>
-<div class="slidingdoors" >
-    <br><br><br><br><br><br><br><br><br>
-    <div class="slidetop" onclick="window.open('joc1.html')" ></div>
-    <div class="slideright" onclick="window.open('joc4.html')"></div>
-    <div class="slidebottom" onclick="window.open('joc2.html')"></div>
-</div>
+<body style="background-color: #FEC828; overflow: hidden;">
+<div class="se-pre-con"></div>
+<div>
+    <a href="hello.html"><img src="../images/back.png" height="80px" style="padding-top: 20px; padding-left: 15px;"/></a>
+    <img src="../images/agents/Capture.PNG" style=" padding-left: 150px;"/>
+    <div style="height: 620px; width: 980px; margin: auto; display: block;">
+        <img src="../images/jocuri.png" width="980px" height="620px" usemap="#menu" id="fundal"
+             style="position: absolute;top: 165px;left: 25px;z-index: 1;">
 
+        <img src="../images/joc1overlay.png" width="980px" height="620px" usemap="#menu" id="joc1"
+             style="position: absolute;top: 165px;left: 25px;z-index: 1; display: none">
+        <img src="../images/joc2overlay.png" width="980px" height="620px" usemap="#menu" id="joc2"
+             style="position: absolute;top: 165px;left: 25px;z-index: 1; display: none">
+        <img src="../images/joc3overlay.png" width="980px" height="620px" usemap="#menu" id="joc3"
+             style="position: absolute;top: 165px;left: 25px;z-index: 1; display: none">
+
+        <map name="menu">
+            <area shape="rect" coords="36,45,380,295" href="joc1.html" onmouseover="enterJoc1()" onmouseout="hideJoc1()">
+            <area shape="rect" coords="450,45,898,308" href="joc2.html" onmouseover="enterJoc3()" onmouseout="hideJoc3()">
+            <area shape="rect" coords="230,330,590,570" href="joc4.html" onmouseover="enterJoc2()" onmouseout="hideJoc2()">
+        </map>
+
+        <audio style="display: none;" controls id="joc1A" class="audio">
+            <source src="../audio/25puzzle.mp3" type="audio/mpeg">
+        </audio>
+        <audio style="display: none;" controls id="joc2A" class="audio">
+            <source src="../audio/27imagini.mp3" type="audio/mpeg">
+        </audio>
+        <audio style="display: none;" controls id="joc3A" class="audio">
+            <source src="../audio/26desen.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+</div>
 </body>
+<script src="../javascript/clippy.js"></script>
+<script>
+    var links;
+    $(document).ready(function () {
+        //loads and positions agent
+        window.CLIPPY_CDN = '../images/agents/';
+        clippy.load('Links', function (agent) {
+            // do anything with the loaded agent
+            links = agent;
+            links.show();
+            links.moveTo(800, 25);
+        });
+
+        //give a bit of time for agent to load, then play tutorial
+        setTimeout(function () {
+            $(".se-pre-con").fadeOut("slow");
+            playTutorial();
+        }, 1000);
+    });
+
+    function playTutorial() {
+
+    }
+
+    function enterJoc1() {
+        $("#joc1").fadeIn();
+        $("#joc1A").get(0).play();
+        links.speak("Hai sa rezolvam puzzle-ul.  ");
+    }
+
+    function hideJoc1() {
+        $("#joc1").fadeOut();
+    }
+
+    function enterJoc2() {
+        $("#joc2").fadeIn();
+        $("#joc2A").get(0).play();
+        links.speak("Hai sa potrivim imaginile. ");
+    }
+
+    function hideJoc2() {
+        $("#joc2").fadeOut();
+    }
+
+    function enterJoc3() {
+        $("#joc3").fadeIn();
+        $("#joc3A").get(0).play();
+        links.speak("Hai sa desenam. ");
+    }
+
+    function hideJoc3() {
+        $("#joc3").fadeOut();
+    }
+
+
+</script>
 
 </html>
